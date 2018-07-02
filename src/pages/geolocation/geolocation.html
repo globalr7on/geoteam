@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar primary>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Geolocation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <button ion-button secondary (click)="getGeolocation()">Obtener Geolocalización</button>
+
+    <div *ngIf="location" class= "rangos">
+      <h3>Latitude: {{ location.lat }}</h3>
+      <h3>Longitude: {{ location.lng }}</h3>
+
+    </div>
+  
+
+</ion-content>
